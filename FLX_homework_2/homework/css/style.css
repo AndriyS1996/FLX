@@ -1,0 +1,127 @@
+
+#about .box-bg:hover{
+    background-color: lightskyblue;
+}
+#about .box-bg:hover h2{
+    color: white;
+}
+.lightskyblue{
+    color: #87CEFA;
+    font-size: 30px;
+}
+.tm-content-box, nav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.tm-banner{
+    border: 1px solid grey;
+}
+section:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 220px 0 0;
+    border-color: #87CEFA transparent transparent transparent;
+}
+.gainsboro{
+    color: gainsboro;
+    letter-spacing: 5px;
+}
+h2 + p{
+    font-style: italic;
+}
+
+p.tm-section-description{
+    line-height: 2;
+    text-indent: 28px;
+}
+.padding-medium>ol>li>a:visited{
+    text-decoration: underline;
+}
+
+.padding-medium>ol>li>a:hover{
+    border-bottom: 1.4px solid #014c8c;
+}
+.padding-medium>ol>li>sup{
+    color: red;
+}
+.box-work{
+    padding: 8px;
+}
+.bgc-lightgrey{
+    background-color: lightgrey;
+}
+.ourwork-gallery{
+    margin: 0 12px 12px 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 12px;
+    background-color: rgb(228, 228, 228);
+}
+.mandatory-field:after{
+    content: ' *';
+    display: block;
+    color: red;
+}
+.btn{
+    float: right;
+    border: 1px solid rgba(135, 206, 250, 0.89);
+    padding: 14px 50px;
+    background-color: #fff;
+    color: rgba(135, 206, 250, 0.89);
+}
+.btn:hover{
+    background-color: rgba(135, 206, 250, 0.8);
+    color: white;
+    border: 1px solid rgba(99, 184, 236, 0.95);
+}
+.tm-nav-item:hover{
+    background-color: lightgrey;
+}
+
+@media print {
+    .tm-sidebar,#about, .heading, .blocks, #ideas, .tm-contex-box,#contact, .img-contact-us{
+        display: none;
+    }
+    .flex-2-col{
+        display: flex;
+    }
+    .flex-2-col .tm-section-title{
+        font-size: 38px;
+        color: blue;
+    }
+    .flex-2-col .tm-section-description>span{
+        color:grey;
+        font-size: 38px;
+    }
+    .flex-2-col .tm-section-description{
+        line-height: 1.7;
+        font-size: 22px;
+    }
+    .flex-2-col .italic{
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+    }
+    .flex-2-col .flex-item:last-child{
+        display: flex;
+        align-items: center;
+    }
+    .flex-2-col .flex-item:last-child img{
+        width: 200px;
+        height: 200px;
+    }
+    .tm-content-header{
+        box-shadow: 0 0 0;
+    }
+    section:before{
+        content: '';
+        display: block;
+        border: 0;
+    }
+    .tm-banner{
+        border: 0;
+    }
+    .lightskyblue{
+        color: grey;
+    }
+}
