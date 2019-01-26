@@ -1,0 +1,14 @@
+.main-wrapper header {
+  background-image: url(img/header_background_v1.jpg); }
+  .main-wrapper header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .main-wrapper header .top-wrapper nav a {
+      padding: 50px 10px;
+      color: #ececec;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-style: normal;
+      font-size: 15px; }
+
+/*# sourceMappingURL=style1.css.map */

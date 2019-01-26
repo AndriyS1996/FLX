@@ -1,0 +1,137 @@
+body {
+  margin: 0; }
+
+#list h1, #list h4, #about h1, #about h4, #contact h1, #contact h4 {
+  font-family: "Roboto", sans-serif;
+  color: #010f16;
+  text-align: end;
+  margin: 5px 0; }
+
+.main-wrapper header {
+  background-image: url("../img/header_background_v2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center; }
+  .main-wrapper header .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 300px; }
+    .main-wrapper header .top-wrapper .logo img {
+      width: 250px;
+      height: 150px; }
+    .main-wrapper header .top-wrapper nav a {
+      padding: 10px 100px;
+      color: #ececec;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      font-size: 24px; }
+    .main-wrapper header .top-wrapper nav a:hover {
+      color: #689ae6; }
+    .main-wrapper header .top-wrapper nav a:first-child, .main-wrapper header .top-wrapper nav a:nth-child(2) {
+      border-right: 2px solid #cfd8dc; }
+.main-wrapper .title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 360px; }
+  .main-wrapper .title h1 {
+    align-self: center;
+    color: #ececec;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif; }
+  .main-wrapper .title a {
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    padding: 15px 60px;
+    background-color: #01acac;
+    font-size: 18px; }
+  .main-wrapper .title a:hover {
+    background-color: #1ddddd; }
+
+main {
+  padding: 20px 220px;
+  display: flex;
+  flex-direction: column; }
+  main .toolbar {
+    align-self: flex-end;
+    padding-right: 20px; }
+    main .toolbar input {
+      padding: 5px; }
+  main #list article {
+    padding: 12px;
+    background-color: #efefef;
+    display: flex;
+    margin: 10px 0; }
+    main #list article div {
+      padding-left: 10px;
+      display: flex;
+      flex-direction: column; }
+      main #list article div .post .post-description {
+        padding-bottom: 5px;
+        color: #0097a7;
+        border-bottom: 1px solid #607d8b; }
+      main #list article div .post h3 {
+        color: #ececec;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-size: 24px;
+        color: #0097a7;
+        margin: 5px 0; }
+      main #list article div .post P {
+        margin-top: 5px;
+        font-family: "Roboto", sans-serif;
+        color: "Roboto", sans-serif;
+        font-size: 15px;
+        line-height: 1.7;
+        font-weight: 300; }
+      main #list article div .btn {
+        align-self: flex-end;
+        background-color: #01acac;
+        color: white;
+        padding: 10px 63px;
+        align-self: flex-end;
+        border: none;
+        cursor: pointer; }
+        main #list article div .btn:hover {
+          background-color: #1ddddd; }
+  main #about p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300px;
+    font-size: 15px;
+    line-height: 1.6; }
+  main #about div:last-child img {
+    width: 100%;
+    height: 100%; }
+  main #contact {
+    margin-top: 30px; }
+    main #contact form {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      text-align: end; }
+      main #contact form label {
+        color: #0097a7;
+        margin: 0; }
+      main #contact form input {
+        height: 30px;
+        width: 100%; }
+      main #contact form textarea {
+        width: 100%; }
+      main #contact form #send {
+        background-color: #01acac;
+        padding: 12px 63px;
+        border: none;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        color: white;
+        align-self: flex-end;
+        margin-top: 5px; }
+        main #contact form #send:hover {
+          background-color: #1ddddd;
+          cursor: pointer; }
+    main #contact .input-form {
+      width: 49%; }

@@ -1,0 +1,183 @@
+@mixin fontRoboto() {
+    color: $mainTextColor;
+    text-decoration: none;
+    font-family: $roboto;
+    font-style: normal;
+    font-size: 24px;
+}
+body{
+    margin: 0;
+}
+#list, #about, #contact{
+    h1,h4{
+        font-family: $roboto;
+        color: $articleTextColor;
+        text-align: end;
+        margin: 5px 0;
+    }
+}
+.main-wrapper{
+    header{
+        background-image: url('../img/header_background_v2.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        .top-wrapper{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 300px;
+            .logo{
+                img{
+                    width: 250px;
+                    height: 150px;
+                }
+            }
+            nav{
+                a{
+                    padding: 10px 100px;
+                    @include fontRoboto();
+                }
+                a:hover{
+                    color: #689ae6;
+                }
+                a:first-child, a:nth-child(2){
+                    border-right: 2px solid #cfd8dc;
+                }
+            }
+        }
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 360px;
+        h1{
+            align-self: center;
+            color: $mainTextColor;
+            text-transform: uppercase;
+            font-family: $roboto;
+        }
+        a{
+            align-self: center;
+            text-decoration: none;
+            color: white;
+            padding: 15px 60px;
+            background-color: $btn-bgc;
+            font-size: 18px;
+        }
+        a:hover{
+            background-color: #1ddddd;
+        }
+    }
+}
+
+main{
+    padding: 20px 220px;
+    display: flex;
+    flex-direction: column;
+    .toolbar{
+        align-self: flex-end;
+        padding-right: 20px;
+        input{
+            padding: 5px;
+        }
+    }
+    #list{
+        article{
+            padding: 12px;
+            background-color: #efefef;
+            display: flex;
+            margin: 10px 0;
+            div{
+                padding-left: 10px;
+                display: flex;
+                flex-direction: column;
+                .post{
+                    .post-description{
+                        padding-bottom: 5px;
+                        color: #0097a7;
+                        border-bottom: 1px solid $borderColor;
+                    }
+                    h3{
+                        @include fontRoboto();
+                        color: $articleTitle;
+                        margin: 5px 0;
+                    }
+                    P{
+                        margin-top: 5px;
+                        font-family: $roboto;
+                        color: $roboto;
+                        font-size: 15px;
+                        line-height: 1.7;
+                        font-weight: 300;
+                    }
+                }
+                .btn{
+                    align-self: flex-end;
+                    background-color: $btn-bgc;
+                    color: white;
+                    padding: 10px 63px;
+                    align-self: flex-end;
+                    border: none;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #1ddddd;
+                    }
+                }
+            }
+        } 
+    }
+
+    #about{
+        p{
+            font-family: $roboto;
+            font-weight: 300px;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+        div:last-child{
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    #contact{
+        margin-top: 30px;
+        form{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            text-align: end;
+            label{
+                color: $articleTitle;
+                margin: 0;
+            }
+            input{
+                height: 30px;
+                width: 100%;
+            }
+            textarea{
+                width: 100%;
+            }
+            #send{
+                background-color: $btn-bgc;
+                padding: 12px 63px;
+                border: none;
+                font-family: $roboto;
+                font-size: 16px;
+                color: white;
+                align-self: flex-end;
+                margin-top: 5px;
+                &:hover{
+                    background-color: #1ddddd;
+                    cursor: pointer;
+                }
+            }
+        }
+        .input-form{
+            width: 49%;
+        }
+    }
+}

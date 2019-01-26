@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,oBAAM;EACF,gBAAgB,EAAE,iCAAiC;EACnD,iCAAY;IACR,OAAO,EAAE,IAAI;IACb,eAAe,EAAE,aAAa;IAE1B,uCAAC;MACG,OAAO,EAAE,SAAS;MAClB,KAAK,ECTN,OAAO;MDUN,eAAe,EAAE,IAAI;MACrB,WAAW,EAAE,oBAAoB;MACjC,UAAU,EAAE,MAAM;MAClB,SAAS,EAAE,IAAI",
+"sources": ["_main.scss","_variables1.scss"],
+"names": [],
+"file": "style1.css"
+}
