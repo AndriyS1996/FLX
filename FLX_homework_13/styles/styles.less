@@ -1,0 +1,126 @@
+@import "variables";
+
+
+.main-wrapper{
+    padding: 0;
+}
+.navbar-wrapper{
+    padding: 0;
+    hr{
+        margin: 0;
+    }
+    .row{
+        margin: 0;
+        .navbar{
+            padding: 0 10px;
+            color: @grey;
+            .nav-item{
+                padding: 2px;
+                &:hover{
+                    background-color: @blue;
+                    color: white;
+                }
+                .nav-link{
+                    color: @grey;
+                    height: 60px;
+                    display:flex;
+                    align-items: center;
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.yoga{
+    .yoga-titles{
+        h1,h3{
+            color: @blue;
+            margin-top: 22px;
+        }
+        hr{
+            margin: 20px 0;
+            height: 1px;
+            background-color: @blue;
+        }
+    }
+    .yoga-img{
+        img{
+            width: 100%;
+        }
+    }
+
+    // Galery
+
+    .gallery{
+        .container-fluid{
+            padding: 0;
+        }
+        .gallery-fotos{
+            .gallery-foto-wrapper{
+                margin: 10px 0;
+                border-width: 1px;
+                border-style: solid;
+                img{
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(1) {
+                .gallery-foto-wrapper{
+                        border-color: @red;
+                        .gallery-foto-description{
+                            background-color: @red;
+                        }
+                    }
+            }
+            &:nth-child(2) {
+                .gallery-foto-wrapper{
+                    border-color: @blue;
+                    .gallery-foto-description{
+                        background-color: @blue;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .gallery-foto-wrapper{
+                    border-color: @orange;
+                    .gallery-foto-description{
+                        background-color: @orange;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .gallery-foto-wrapper{
+                    border-color: @green;
+                    .gallery-foto-description{
+                        background-color: @green;
+                    }
+                }
+            }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 12px 0;
+                    display: block;
+                }
+            }
+        }
+}
+
+.page-footer{
+    margin: 40px 0;
+    .container-fluid{
+        padding: 0 30px;
+    }
+    .footer-copyright{
+        padding: 15px 10px;
+        background-color: @grey;
+        color: white;
+    }
+}
