@@ -1,0 +1,65 @@
+.buttons {
+  text-align: center;
+}
+.buttons .rock,
+.buttons .paper,
+.buttons .scissors {
+  padding: 8px 30px;
+  background-color: purple;
+  border-radius: 4px;
+  color: white;
+  border: none;
+}
+.buttons .rock:hover,
+.buttons .paper:hover,
+.buttons .scissors:hover {
+  cursor: pointer;
+  color: lightskyblue;
+  box-shadow: 0 0 10px lightskyblue;
+}
+
+.game-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.game-wrapper .main-content .heading {
+  text-align: center;
+}
+.game-wrapper .main-content .images {
+  display: flex;
+  height: 252px;
+}
+.game-wrapper .main-content .images .image-1,
+.game-wrapper .main-content .images .image-2 {
+  padding: 10px;
+  text-align: center;
+}
+.game-wrapper .main-content .images .image-1 img,
+.game-wrapper .main-content .images .image-2 img {
+  max-width: 150px;
+}
+.game-wrapper .main-content .btn-reset {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+.game-wrapper .main-content .btn-reset .reset {
+  border: none;
+  color: white;
+  background-color: teal;
+  padding: 8px 32px;
+  border-radius: 4px;
+}
+.game-wrapper .main-content .btn-reset .reset:hover {
+  cursor: pointer;
+  color: aqua;
+  box-shadow: 0 0 8px aqua;
+}
+.game-wrapper .main-content .rules {
+  text-align: center;
+}
+.game-wrapper .history {
+  width: 600px;
+  padding: 10px;
+  text-align: center;
+}

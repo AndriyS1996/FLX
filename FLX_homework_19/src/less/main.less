@@ -1,0 +1,48 @@
+
+.game-wrapper{
+    display: flex;
+    justify-content: center;
+    .main-content{
+        .heading{
+            text-align: center;
+        }
+        .images{
+            display: flex;
+            height: 252px;
+            .image-1, .image-2{
+                padding: 10px;
+                text-align: center;
+                img{
+                    max-width: 150px;
+                }
+            }
+        }
+        .btn-reset{
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            .reset{
+                border: none;
+                color: white;
+                background-color: teal;
+                padding: 8px 32px;
+                border-radius: 4px;
+                &:hover {
+                    cursor: pointer;
+                    color: aqua;
+                    box-shadow: 0 0 8px aqua;
+                }
+            }
+
+        }
+        .rules{
+            text-align: center;
+        }
+    }
+
+    .history{
+        width: 600px;
+        padding: 10px;
+        text-align: center;
+    }
+}
